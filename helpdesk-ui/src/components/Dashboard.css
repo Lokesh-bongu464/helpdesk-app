@@ -1,0 +1,56 @@
+.dashboard-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard-title {
+  font-size: 28px;
+  margin-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #003366;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card h2 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.total-tickets {
+  background-color: #3385ff; /* blue */
+}
+
+.total-solved {
+  background-color: #33ff77; /* green */
+}
+
+.total-awaiting {
+  background-color: #ff4d4d; /* red */
+}
+
+.total-progress {
+  background-color: #ffff66; /* yellow */
+}

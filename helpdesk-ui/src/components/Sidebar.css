@@ -1,0 +1,46 @@
+.sidebar {
+  width: 250px;
+  background-color: #d1d5db;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none; /* ✅ Removes underline */
+  cursor: pointer; /* ✅ Makes it clear it's clickable */
+}
+
+.sidebar-item img {
+  height: 24px;
+}
+
+.pointer-icon {
+  width: 10px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 8px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.sidebar-item:visited,
+.sidebar-item:hover,
+.sidebar-item.active {
+  text-decoration: none;
+}

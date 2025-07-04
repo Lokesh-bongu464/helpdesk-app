@@ -1,0 +1,72 @@
+.signin-container {
+  height: 100vh;
+  background-color: rgba(85, 214, 194, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-box {
+  background-color: rgba(239, 237, 237, 0.5);
+  padding: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.signin-title {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+
+  font-size: 16px;
+}
+
+.signin-button {
+  width: 50%;
+  background-color: #00c400;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.signin-button:hover {
+  background-color: #00a800;
+}
+
+.signin-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.forgot-password {
+  color: #f49097;
+  text-decoration: none;
+}
+
+.signup {
+  color: black;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.signin-message {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+  color: green;
+}

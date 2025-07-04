@@ -1,0 +1,130 @@
+body {
+  background-color: #f4f4f4;
+  font-family: sans-serif;
+}
+
+.mytickets-container {
+  background: white;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.controls-column {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-container input {
+  background: rgba(196, 196, 196, 0.63);
+  border: none;
+  padding: 6px 35px 6px 10px;
+  width: 250px; /* increased width */
+  height: 35px;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.search-icon {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.entries-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.dropdown-container {
+  position: relative;
+}
+
+.dropdown-container select {
+  appearance: none;
+  -webkit-appearance: none;
+  background: rgba(196, 196, 196, 0.63);
+  border: none;
+  height: 30px;
+  border-radius: 5px;
+  padding: 2px 25px 2px 5px;
+  font-size: 14px;
+}
+
+.dropdown-arrow {
+  width: 10px;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px; /* added space below table */
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+  font-weight: normal; /* removed header bold */
+}
+
+th {
+  border-bottom: 2px solid #ccc;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px; /* increased top margin for more space */
+  font-size: 14px; /* increased text size */
+}
+
+.status {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 4px;
+  color: white;
+  font-size: 12px;
+}
+
+.status.inprogress {
+  background-color: #30b67d;
+}
+
+.status.onhold {
+  background-color: #2b5c7d;
+}
+
+.status.closed {
+  background-color: #5d5d5d;
+}
+
+.star-icon {
+  width: 14px;
+  margin-right: 2px;
+}
+span {
+  font-size: 20px;
+}
