@@ -45,21 +45,32 @@ const NewTicket = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     if (!formData.captchaChecked) {
-      alert("Please verify captcha");
+      alert("❌ Please verify captcha");
       return;
     }
 
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/tickets",
+        `${import.meta.env.VITE_API_BASE_URL}/api/tickets`,
         formData
       );
+
       console.log(res.data);
-      alert("Ticket created successfully");
+      alert("✅ Ticket created successfully");
+
+      // Optionally reset form data here
+      setFormData({
+        ...formData,
+        title: "",
+        description: "",
+        captchaChecked: false,
+      });
     } catch (err) {
       console.error(err);
-      alert("Failed to create ticket");
+      const msg = err.response?.data?.message || "Failed to create ticket";
+      alert(`❌ ${msg}`);
     }
   };
 
