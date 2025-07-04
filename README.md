@@ -49,18 +49,4 @@
 
 ---
 
-## 👨‍💻 Author
 
-**Team WeAnalyz**
-
----
-
-### 📌 Note
-
-Let me know if you want me to prepare:
-
-- **API documentation file** today  
-- **Badges section** for Vercel, Render, and license  
-- **Detailed Netlify/Vercel + Render deployment guide** for your internal team documentation
-
-Just share your next task for today’s sprint and I will assist systematically.
